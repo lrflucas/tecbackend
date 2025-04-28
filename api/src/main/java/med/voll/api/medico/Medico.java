@@ -73,19 +73,6 @@ public class Medico {
         this.endereco = new Endereco(dados.endereco());
     }
 
-    public Medico(Boolean ativo, Long id, String nome, String email, String telefone, String crm, Especialidade especialidade) {
-        this.ativo = ativo;
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.telefone = telefone;
-        this.crm = crm;
-        this.especialidade = especialidade;
-    }
-
-    public Medico() {
-    }
-
     public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
         if (dados.nome() != null) {
             this.nome = dados.nome();
