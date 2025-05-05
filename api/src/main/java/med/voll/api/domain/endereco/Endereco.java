@@ -1,4 +1,4 @@
-package med.voll.api.endereco;
+package med.voll.api.domain.endereco;
 
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
@@ -26,6 +26,9 @@ public class Endereco {
         this.cidade = dados.cidade();
         this.numero = dados.numero();
         this.complemento = dados.complemento();
+    }
+
+    public Endereco() {
     }
 
     public void atualizarInformacoes(DadosEndereco dados) {
